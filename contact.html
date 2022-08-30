@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HomePage</title>
+
+    <link rel="stylesheet" href="css/contactform.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="grid-container">
+      <nav>BreakFast - Recipes</nav>
+      <div id="icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+      <div id="links">
+        <a href="index.html">Home</a>
+        <a href="recipe.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+        <a href="submitRecipe.html">Submit recipe</a>
+      </div>
+
+      <div class="formContainer">
+        <form action="#">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name.." />
+
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email.."
+          />
+
+          <label for="subject">Question</label>
+          <textarea
+            id="question"
+            name="question"
+            placeholder="Write your question here.."
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <footer id="social">
+        <a href="https://sv-se.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="contact.html">Contact us</a>
+      </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
