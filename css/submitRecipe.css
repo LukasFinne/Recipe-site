@@ -1,0 +1,83 @@
+body {
+  background-color: #ffffff;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  background-color: #92b4ec;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 1em;
+  font-family: Verdana, Geneva, Tahoma, cursive;
+  font-size: 2em;
+}
+#icon {
+  background-color: #ffe69a;
+  display: grid;
+  padding: 1em;
+  justify-items: center;
+  align-items: center;
+}
+
+#links {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: none;
+}
+
+#links a {
+  display: grid;
+  text-decoration: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  background-color: #ffe69a;
+  padding: 1em;
+}
+
+#links a:visited {
+  background-color: #ffd24c;
+}
+
+.formContainer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 6em 2em 6em 2em;
+}
+
+form {
+  display: grid;
+  background-color: #92b4ec;
+  border-radius: 15px;
+  padding: 2em 1em 2em 1em;
+}
+
+#instructions {
+  height: 15em;
+}
+
+footer {
+  display: flex;
+  background-color: #92b4ec;
+  padding: 2em;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content: space-around;
+}
+
+footer a {
+  text-decoration: none;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HomePage</title>
+
+    <link rel="stylesheet" href="css/submitRecipe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="grid-container">
+      <nav>BreakFast - Recipes</nav>
+      <div id="icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+      <div id="links">
+        <a href="index.html">Home</a>
+        <a href="recipe.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+        <a href="submitRecipe.html">Submit recipe</a>
+      </div>
+
+      <div class="formContainer">
+        <form action="#">
+          <label for="recipe">Recipe name</label>
+          <input
+            type="text"
+            id="recipe"
+            name="recipe"
+            placeholder="Recipe name here.."
+          />
+
+          <label for="ingredients">Ingredients</label>
+          <textarea
+            id="ingredients"
+            name="ingredients"
+            placeholder="Write your ingredients here.."
+          ></textarea>
+
+          <label for="instructions">Instructions</label>
+          <textarea
+            id="instructions"
+            name="instructions"
+            placeholder="Write your instructions here"
+          ></textarea>
+          <label for="images">Please upload an image of your food</label>
+          <input type="file" id="myFile" name="filename" />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <footer id="social">
+        <a href="https://sv-se.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="contact.html">Contact us</a>
+      </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
