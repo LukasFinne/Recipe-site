@@ -172,4 +172,8 @@ footer a {
   #links a {
     margin-left: 13em;
   }
+
+  .recipe p {
+    font-size: 1.5em;
+  }
 }
