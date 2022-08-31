@@ -11,4 +11,14 @@ function displayNav() {
   }
 }
 
+function resizeDisplay() {
+  let links = document.querySelector("#links");
+  if (window.innerWidth > 815) {
+    links.style.display = "block";
+  } else {
+    links.style.display = "none";
+  }
+}
+
+window.addEventListener("resize", resizeDisplay);
 document.querySelector("#icon").addEventListener("click", displayNav);
