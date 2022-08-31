@@ -131,3 +131,33 @@ footer a {
     margin-left: 5em;
   }
 }
+
+@media (min-width: 75em) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #links {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  .formContainer {
+    margin-top: 10em;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+}
+
+@media (min-width: 102em) {
+  #links a {
+    margin-left: 13em;
+  }
+}
