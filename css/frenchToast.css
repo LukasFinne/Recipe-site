@@ -95,3 +95,117 @@ footer {
 footer a {
   text-decoration: none;
 }
+
+@media (min-width: 51em) {
+  #icon {
+    visibility: hidden;
+    display: none;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+  }
+  nav {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 0em;
+  }
+
+  .recipe {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+  }
+  .recipe p {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 45%;
+  }
+
+  .recipe img {
+    padding: 2em 1em 0 2em;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 50%;
+    justify-self: end;
+  }
+  p + h2 {
+    justify-self: start;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+    padding-left: 1em;
+  }
+
+  .recipe ul {
+    font-size: 1em;
+    padding-top: 5em;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 50%;
+  }
+
+  ul + h2 {
+    padding-left: 15em;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .recipe ol {
+    justify-self: end;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 45%;
+    padding-top: 5em;
+    padding-right: 3em;
+  }
+
+  #links {
+    display: block;
+    background-color: #f1a661;
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+
+  #links a {
+    background-color: #f1a661;
+    display: inline-grid;
+    margin-top: 1.5em;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    color: black;
+  }
+
+  #links a:visited {
+    background-color: #f1a661;
+    color: black;
+  }
+
+  footer {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
+
+@media (min-width: 64em) {
+  #links a {
+    margin-left: 5em;
+  }
+}
