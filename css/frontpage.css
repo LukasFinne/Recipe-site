@@ -151,12 +151,11 @@ footer a {
 }
 
 @media (min-width: 75em) {
-
-  .grid-container{
+  .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 10fr 1fr;
   }
-  #links{
+  #links {
     grid-column-start: 2;
     grid-column-end: 5;
   }
@@ -166,14 +165,19 @@ footer a {
     grid-column-end: 3;
   }
 
-  #recipe2{
+  #recipe2 {
     grid-column-start: 3;
     grid-column-end: 5;
   }
 
-footer{
-  grid-column-start: 1;
-  grid-column-end: 5;
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
 }
 
+@media (min-width: 102em) {
+  #links a {
+    margin-left: 13em;
+  }
 }

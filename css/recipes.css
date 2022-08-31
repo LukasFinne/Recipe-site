@@ -167,3 +167,9 @@ footer a {
     grid-column-end: 5;
   }
 }
+
+@media (min-width: 102em) {
+  #links a {
+    margin-left: 13em;
+  }
+}
