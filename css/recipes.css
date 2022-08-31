@@ -54,7 +54,7 @@ nav {
 .recipe {
   grid-column-start: 1;
   grid-column-end: 3;
-  margin: 2em 2em 2em 2em;
+  margin: 2em 2em 0em 2em;
   background-color: #fdeedc;
   border-radius: 15px;
 }
@@ -90,6 +90,7 @@ footer {
   grid-column-start: 1;
   grid-column-end: 3;
   justify-content: space-around;
+  margin-top: 2em;
 }
 
 footer a {
