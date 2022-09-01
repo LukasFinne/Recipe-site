@@ -17,7 +17,7 @@ function displayNav() {
 function resizeDisplay() {
   let links = document.querySelector("#links");
   if (window.innerWidth > 815) {
-    links.style.display = "grid";
+    links.style.display = "flex";
   } else {
     links.style.display = "none";
   }
