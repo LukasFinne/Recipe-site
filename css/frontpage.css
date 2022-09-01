@@ -60,7 +60,6 @@ ul {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
-  overflow: auto;
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 3;
@@ -115,7 +114,6 @@ footer a {
 }
 
 @media (min-width: 51em) {
-
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -146,6 +144,21 @@ footer a {
   #links a {
     background-color: #f1a661;
     color: black;
+  }
+}
+
+@media (min-width: 75em) {
+  ul {
+    display: flex;
+    overflow: auto;
+  }
+  ul li {
+    padding: 0.5em 0.2em 0.2em 0.2em;
+  }
+
+  ul li img{
+    width: 100%;
+    height: auto;
   }
 }
 
