@@ -6,8 +6,8 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 5fr 1fr;
-  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0fr 4fr 1fr 0.3fr;
   width: 100vw;
   height: 100vh;
 }
@@ -15,12 +15,11 @@ body {
 nav {
   background-color: #ffd8a9;
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 5;
   text-align: center;
   display: grid;
   justify-items: center;
   align-items: center;
-  padding: 1em;
   font-family: Verdana, Geneva, Tahoma, cursive;
   font-size: 2em;
 }
@@ -30,41 +29,52 @@ nav {
   padding: 1em;
   justify-items: center;
   align-items: center;
+  grid-column-start: 5;
+  grid-column-end: 5;
 }
 
 #links {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 6;
   display: none;
+  background-color: #f1a661;
 }
 
 #links a {
-  display: grid;
   text-decoration: none;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   align-items: center;
   background-color: #f1a661;
   padding: 1em;
 }
 
-#links a:visited {
-  background-color: #e38b29;
-}
-.recipe {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin: 2em 2em 0em 2em;
-  background-color: #fdeedc;
-  border-radius: 15px;
+.todaysRecipe {
+  margin: 0;
+  grid-column: 1 / 6;
+  justify-self: center;
+  align-self: center;
+  font-family: Verdana, Geneva, Tahoma, cursive;
 }
 
-.recipeName {
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-auto-flow: column;
+  background-color: #fdeedc;
+  overflow: auto;
+}
+
+.recipe h2 {
   background-color: #e38b29;
   padding: 1em 0 1em 0;
-  border-radius: 15px 15px 0 0;
+  margin: 0;
   font-family: Verdana, Geneva, Tahoma, cursive;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .recipe h2,
@@ -80,100 +90,74 @@ img {
 
 .recipe p {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 1em;
+  font-size: 1.9em;
+  padding: 0 1em 1em 1em;
+}
+.recipe a {
+  text-decoration: none;
 }
 
 footer {
-  display: flex;
   background-color: #ffd8a9;
-  padding: 2em;
+  padding: 0em;
+  margin: 0;
   grid-column-start: 1;
-  grid-column-end: 3;
-  justify-content: space-around;
-  margin-top: 2em;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 footer a {
   text-decoration: none;
 }
+
 @media (min-width: 51em) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0fr 4fr 1fr 0.3fr;
+    width: 100vw;
+    height: 100vh;
+  }
   #icon {
     visibility: hidden;
     display: none;
   }
 
-  .grid-container {
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 10fr 1fr;
-    width: 100vw;
-    height: 100vh;
-  }
   nav {
     grid-column-start: 1;
     grid-column-end: 1;
     padding: 0em;
   }
-
   #links {
-    display: block;
     background-color: #f1a661;
     grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-end: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   #links a {
     background-color: #f1a661;
-    display: inline-grid;
-    margin-top: 1.5em;
-    margin-left: 3em;
-    margin-bottom: 1em;
     color: black;
-  }
-
-  #links a:visited {
-    background-color: #f1a661;
-    color: black;
-  }
-}
-
-@media (min-width: 64em) {
-  #links a {
-    margin-left: 5em;
   }
 }
 
 @media (min-width: 75em) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 10fr 1fr;
+  ul {
+    display: flex;
   }
-  #links {
-    grid-column-start: 2;
-    grid-column-end: 5;
+  ul li {
+    padding: 0.5em 0.2em 0.2em 0.2em;
   }
 
-  #recipe1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
-  #recipe2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-  }
-
-  footer {
-    grid-column-start: 1;
-    grid-column-end: 5;
-  }
-}
-
-@media (min-width: 102em) {
-  #links a {
-    margin-left: 13em;
-  }
-
-  .recipe p {
-    font-size: 1.5em;
+  ul li img {
+    width: 100%;
+    height: auto;
   }
 }

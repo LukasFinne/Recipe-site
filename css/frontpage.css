@@ -66,6 +66,7 @@ ul {
   grid-row-end: 5;
   grid-auto-flow: column;
   background-color: #fdeedc;
+  overflow: auto;
 }
 
 .recipe h2 {
@@ -150,7 +151,6 @@ footer a {
 @media (min-width: 75em) {
   ul {
     display: flex;
-    overflow: auto;
   }
   ul li {
     padding: 0.5em 0.2em 0.2em 0.2em;
