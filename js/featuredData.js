@@ -17,13 +17,17 @@ fetch(url)
       let li = createNode("li"),
         h2 = createNode("h2"),
         img = createNode("img"),
-        p = createNode("p");
+        p = createNode("p"),
+        a = createNode("a");
       h2.textContent = recipe.name;
       img.src = recipe.picture;
       p.textContent = recipe.information;
+      a.textContent = "Go to recipe page";
+      a.href = recipe.recipePage;
 
       appendNode(li, h2);
       appendNode(li, img);
+      appendNode(p, a);
       appendNode(li, p);
 
       if (recipe.featured === true) {

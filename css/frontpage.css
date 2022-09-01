@@ -100,7 +100,7 @@ img {
   padding: 0 1em 1em 1em;
 }
 .recipe a{
-  padding-left: 1em;
+  text-decoration: none;
 }
 
 footer {
