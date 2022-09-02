@@ -26,7 +26,7 @@
       <h1 class="contactTitle">Recipe submit form</h1>
       <div class="formContainer">
         <form action="#">
-          <label for="recipe">Recipe name</label>
+          <label for="name">Recipe name</label>
           <input
             type="text"
             id="name"
@@ -40,6 +40,7 @@
           <textarea
             class="textarea"
             name="ingredients"
+            id="ingredients"
             placeholder="Write your ingredients here.."
             required
           ></textarea>
@@ -56,7 +57,7 @@
           <div id="txtAreaFeedBack2"></div>
 
           <label for="images">Please upload an image of your food</label>
-          <input type="file" id="myFile" name="filename" required />
+          <input type="file" id="images" name="filename" required />
           <input id="submitBtn" type="submit" value="Submit" />
         </form>
       </div>
