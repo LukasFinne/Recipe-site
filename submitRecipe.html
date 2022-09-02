@@ -29,27 +29,35 @@
           <label for="recipe">Recipe name</label>
           <input
             type="text"
-            id="recipe"
+            id="name"
             name="recipe"
             placeholder="Recipe name here.."
+            required
           />
+          <div id="nameFeedback"></div>
 
           <label for="ingredients">Ingredients</label>
           <textarea
-            id="ingredients"
+            class="textarea"
             name="ingredients"
             placeholder="Write your ingredients here.."
+            required
           ></textarea>
+          <div id="txtAreaFeedBack"></div>
 
           <label for="instructions">Instructions</label>
           <textarea
-            id="instructions"
+            class="textarea"
             name="instructions"
+            id="instructions"
             placeholder="Write your instructions here"
+            required
           ></textarea>
+          <div id="txtAreaFeedBack2"></div>
+
           <label for="images">Please upload an image of your food</label>
-          <input type="file" id="myFile" name="filename" />
-          <input id="submitBtn" id="submit" type="submit" value="Submit" />
+          <input type="file" id="myFile" name="filename" required />
+          <input id="submitBtn" type="submit" value="Submit" />
         </form>
       </div>
 
@@ -61,5 +69,6 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

@@ -27,22 +27,34 @@
       <div class="formContainer">
         <form action="#">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name.." />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name.."
+            required
+          />
+          <div id="nameFeedback"></div>
 
           <label for="email">Email</label>
           <input
-            type="text"
+            type="email"
+            pattern=".+@globex\.com"
             id="email"
             name="email"
             placeholder="Your email.."
+            required
           />
 
-          <label for="subject">Question</label>
+          <label for="question">Question</label>
           <textarea
             id="question"
+            class="textarea"
             name="question"
             placeholder="Write your question here.."
+            required
           ></textarea>
+          <div id="txtAreaFeedBack"></div>
 
           <input id="submitBtn" type="submit" value="Submit" />
         </form>
