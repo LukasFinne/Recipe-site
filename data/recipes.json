@@ -4,7 +4,7 @@
       "featured": true,
       "name": "French Toast",
       "picture": "img/french-toast-wide",
-      "information": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "information": "If you're looking for the best French toast recipe on the internet, you've come to the right place. This tender, fluffy, and indulgent recipe comes together quickly and easily with just five ingredients you already have on hand. How do you know it's good? Because this deliciously easy recipe has earned nearly 2,000 rave reviews from the Allrecipes community. Happy home cooks call it a definite keeper and a Sunday morning favorite (among many other ringing endorsements).Here's everything you need to know about making the best French toast of your life, including the best bread to use and what ingredients you need. Plus, get our best storage secrets and freezer hacks.",
       "ingredients": "1.5dl Milk, 1 Egg, 1 ml Salt, 4 Bread, 2 tbs butter, 1 ml cinnamon",
       "instructions": "1.Whisk together milk, eggs, salt, cinnamon and sugar in a bowl 2.Heat a frying pan with butter 3.Dip 4 thick slices of bread into the batter and fry them on both sides until you get a nice crispy and golden brown surface 4.Top your French toast with some mixed berries and a scoop of ice cream.",
       "recipePage": "frenchToast.html"
@@ -13,18 +13,18 @@
       "featured": true,
       "name": "Pancakes",
       "picture": "img/pancake",
-      "information": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-      "ingredients": "1.5dl Milk, 1 Egg, 1 ml Salt, 4 Bread, 2 tbs butter, 1 ml cinnamon",
-      "instructions": "Whisk together milk, eggs, salt, cinnamon and sugar in a bowl, Heat a frying pan with butter, Dip 4 thick slices of bread into the batter and fry them on both sides until you get a nice crispy and golden brown surface, Top your French toast with some mixed berries and a scoop of ice cream.",
+      "information": "Every single Sunday begins with pancakes… and ends with leftover pancakes from the morning. These are everything you want in a pancake. They’re soft and so fluffy… each mouthful melts in your mouth… you’ll be reaching for more than one. Stack. Possibly.",
+      "ingredients": "2 1/2dl Flour, 1 ml Salt, 6dl Milk, 3 Eggs, Butter",
+      "instructions": "1. Mix the flour and salt in a bowl. Whisk in half the milk and beat until smooth. Whisk in the rest of the milk and the eggs, 2.Fry thin pancakes in a little butter, for each pancake, in a frying pan or pancake pan. 3.Serve with jam, berries or fruit",
       "recipePage": "pancake.html"
     },
     {
       "featured": false,
       "name": "Waffles",
       "picture": "img/waffle",
-      "information": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-      "ingredients": "1.5dl Milk, 1 Egg, 1 ml Salt, 4 Bread, 2 tbs butter, 1 ml cinnamon",
-      "instructions": "Whisk together milk, eggs, salt, cinnamon and sugar in a bowl, Heat a frying pan with butter, Dip 4 thick slices of bread into the batter and fry them on both sides until you get a nice crispy and golden brown surface, Top your French toast with some mixed berries and a scoop of ice cream.",
+      "information": "This waffle recipe is the only one you'll need to make homemade waffles with your waffle iron. Simple pantry ingredients mix up quickly in this easy batter that can be used right away or stored in the refrigerator for up to a week. Serve waffles hot with whipped cream and fresh fruit or with butter and maple syrup for either breakfast, brunch, or a snack.  ",
+      "ingredients": "3.5dl Flour, 2 Egg, 4 Milk, 100g butter, 2 tsb Baking powder",
+      "instructions": "1.Melt the butter and let it cool down. 2.Mix the wheat flour and baking powder in a bowl. 3.Add the eggs and milk. Beat until smooth. Add the butter. 4.Heat the waffle iron. Brush with a little butter before the first layer. 5.Bake the waffles and serve with jam and whipped cream.",
       "recipePage": "waffle.html"
     }
   ]
