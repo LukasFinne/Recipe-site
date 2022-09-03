@@ -46,16 +46,16 @@ function printFrenchToast(url, ul) {
           img = createNode("img"),
           p = createNode("p");
         h2.textContent = recipe.name;
-        img.src = recipe.picture;
         p.textContent = recipe.information;
+        img.src = recipe.picture;
         ingredientsH3.textContent = "Ingredients";
         ingredients.textContent = recipe.ingredients;
         instructionsH3.textContent = "Instructions";
         instructions.textContent = recipe.instructions;
 
         appendNode(li, h2);
-        appendNode(li, img);
         appendNode(li, p);
+        appendNode(li, img);
         appendNode(li, ingredientsH3);
         appendNode(li, ingredients);
         appendNode(li, instructionsH3);
