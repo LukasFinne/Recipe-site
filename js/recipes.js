@@ -29,6 +29,88 @@ switch (page) {
     console.log("error");
 }
 
+function printWaffle(url, ul) {
+  fetch(url)
+    .then((resp) => resp.json())
+    .then(function (data) {
+      let recipes = data.recipe;
+      let frenchToast = recipes.slice(2, 3);
+
+      return frenchToast.map(function (recipe) {
+        let li = createNode("li"),
+          h2 = createNode("h2"),
+          ingredientsH3 = createNode("h3"),
+          ingredients = createNode("p"),
+          instructionsH3 = createNode("h3"),
+          instructions = createNode("p"),
+          img = createNode("img"),
+          p = createNode("p");
+        h2.textContent = recipe.name;
+        p.textContent = recipe.information;
+        img.src = recipe.picture;
+        ingredientsH3.textContent = "Ingredients";
+        ingredients.textContent = recipe.ingredients;
+        instructionsH3.textContent = "Instructions";
+        instructions.textContent = recipe.instructions;
+
+        appendNode(li, h2);
+        appendNode(li, p);
+        appendNode(li, img);
+        appendNode(li, ingredientsH3);
+        appendNode(li, ingredients);
+        appendNode(li, instructionsH3);
+        appendNode(li, instructions);
+
+        appendNode(ul, li);
+      });
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
+
+
+
+function printPancake(url, ul) {
+  fetch(url)
+    .then((resp) => resp.json())
+    .then(function (data) {
+      let recipes = data.recipe;
+      let frenchToast = recipes.slice(1, 2);
+
+      return frenchToast.map(function (recipe) {
+        let li = createNode("li"),
+          h2 = createNode("h2"),
+          ingredientsH3 = createNode("h3"),
+          ingredients = createNode("p"),
+          instructionsH3 = createNode("h3"),
+          instructions = createNode("p"),
+          img = createNode("img"),
+          p = createNode("p");
+        h2.textContent = recipe.name;
+        p.textContent = recipe.information;
+        img.src = recipe.picture;
+        ingredientsH3.textContent = "Ingredients";
+        ingredients.textContent = recipe.ingredients;
+        instructionsH3.textContent = "Instructions";
+        instructions.textContent = recipe.instructions;
+
+        appendNode(li, h2);
+        appendNode(li, p);
+        appendNode(li, img);
+        appendNode(li, ingredientsH3);
+        appendNode(li, ingredients);
+        appendNode(li, instructionsH3);
+        appendNode(li, instructions);
+
+        appendNode(ul, li);
+      });
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
+
 function printFrenchToast(url, ul) {
   fetch(url)
     .then((resp) => resp.json())

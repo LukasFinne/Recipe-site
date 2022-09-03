@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>HomePage</title>
 
-    <link rel="stylesheet" href="css/frenchToast.css" />
+    <link rel="stylesheet" href="css/pancake.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="grid-container">
-      <nav>BreakFast - Recipes</nav>
+      <nav>BreakFast - Recipe</nav>
       <div id="icon">
         <i class="fa fa-bars fa-2x"></i>
       </div>
@@ -24,49 +24,8 @@
         <a href="submitRecipe.html">Submit recipe</a>
       </div>
 
-      <div class="recipe">
-        <div class="recipeName"><h2>French toast</h2></div>
-        <img src="img/pancake" alt="pancake" />
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-
-        <h2>Ingredients</h2>
-        <ul>
-          <li>1.5 dl Milk</li>
-          <li>1 Egg</li>
-          <li>1 ml Salt</li>
-          <li>4 thick bread slices</li>
-          <li>2 tbs butter for frying</li>
-          <li>1 ml cinnamon</li>
-        </ul>
-        <h2>Instructions</h2>
-        <ol>
-          <li>
-            Whisk together milk, eggs, salt, cinnamon and sugar in a bowl.
-          </li>
-         
-          <li>Heat a frying pan with butter</li>
-          
-          <li>
-            Dip 4 thick slices of bread into the batter and fry them on both
-            sides until you get a nice crispy and golden brown surface
-          </li>
-          
-          <li>
-            Top your French toast with some mixed berries and a scoop of ice
-            cream.
-          </li>
-        </ol>
-      </div>
+      <h1 class="todaysRecipe">Pancake</h1>
+      <ul class="recipe" id="recipe1"></ul>
 
       <footer id="social">
         <a href="https://sv-se.facebook.com/">Facebook</a>
@@ -75,6 +34,7 @@
       </footer>
     </div>
 
+    <script src="js/recipes.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

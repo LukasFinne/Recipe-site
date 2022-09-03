@@ -216,7 +216,7 @@ footer a {
     padding: 0.5em;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, cursive;
-    font-size: 2.5em;
+    font-size: 2em;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
