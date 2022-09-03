@@ -39,19 +39,27 @@ function printFrenchToast(url, ul) {
       return frenchToast.map(function (recipe) {
         let li = createNode("li"),
           h2 = createNode("h2"),
+          ingredientsH3 = createNode("h3"),
+          ingredients = createNode("p"),
+          instructionsH3 = createNode("h3"),
+          instructions = createNode("p"),
           img = createNode("img"),
-          p = createNode("p"),
-          a = createNode("a");
+          p = createNode("p");
         h2.textContent = recipe.name;
         img.src = recipe.picture;
         p.textContent = recipe.information;
-        a.textContent = "Go to recipe page";
-        a.href = recipe.recipePage;
+        ingredientsH3.textContent = "Ingredients";
+        ingredients.textContent = recipe.ingredients;
+        instructionsH3.textContent = "Instructions";
+        instructions.textContent = recipe.instructions;
 
         appendNode(li, h2);
         appendNode(li, img);
-        appendNode(p, a);
         appendNode(li, p);
+        appendNode(li, ingredientsH3);
+        appendNode(li, ingredients);
+        appendNode(li, instructionsH3);
+        appendNode(li, instructions);
 
         appendNode(ul, li);
       });
