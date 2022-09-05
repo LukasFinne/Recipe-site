@@ -17,7 +17,7 @@ body a:hover {
 }
 
 nav {
-  background-color: #fecd70; 
+  background-color: #fecd70;
   grid-column-start: 1;
   grid-column-end: 5;
   text-align: center;
@@ -82,15 +82,15 @@ form {
   flex-direction: column;
 }
 
-form label{
+form label {
   margin-top: 2em;
 }
 
-#question{
+#question {
   height: 10em;
 }
 
-#submitBtn{
+#submitBtn {
   align-self: flex-end;
 }
 
@@ -143,12 +143,14 @@ footer a {
   }
 
   .formContainer {
-  
     grid-column-start: 2;
     grid-column-end: 5;
-    
   }
-  
-
 }
 
+@media (min-width: 75em) {
+  .formContainer {
+    max-width: 100em;
+    margin: auto;
+  }
+}

@@ -161,6 +161,8 @@ footer a {
 @media (min-width: 75em) {
   ul {
     display: flex;
+    max-width: 100em;
+    margin: auto;
   }
   ul li {
     padding: 0.5em 0.2em 0.2em 0.2em;
@@ -169,5 +171,9 @@ footer a {
   ul li img {
     width: 100%;
     height: auto;
+  }
+
+  .recipe p{
+    font-size: 1.5em;
   }
 }

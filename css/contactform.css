@@ -147,3 +147,10 @@ footer a {
     grid-column-end: 5;
   }
 }
+
+@media (min-width: 75em) {
+  .formContainer {
+    max-width: 100em;
+    margin: auto;
+  }
+}
