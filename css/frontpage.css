@@ -17,7 +17,6 @@ body a:hover {
   height: 100vh;
 }
 
-
 nav {
   background-color: #fecd70;
   grid-column-start: 1;
@@ -163,6 +162,7 @@ footer a {
   ul {
     display: flex;
     max-width: 100em;
+    height: 100%;
     margin: auto;
   }
   ul li {
@@ -170,7 +170,7 @@ footer a {
   }
 
   ul li img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
