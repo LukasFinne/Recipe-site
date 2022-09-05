@@ -307,7 +307,9 @@ footer a {
   ul {
     display: flex;
     max-width: 100em;
-    margin-left: 10em;
+    margin: auto;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
   ul li {
     padding: 0.5em 0.2em 0.2em 0.2em;
@@ -320,7 +322,7 @@ footer a {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0fr 4fr 1fr 0.3fr;
+    grid-template-rows: 0.5fr 0fr 1fr 1fr 0.2fr;
     width: 100vw;
     height: 100vh;
   }
@@ -349,12 +351,13 @@ footer a {
 
   #heart {
     text-align: center;
-    padding-right: 2.4em;
   }
+
   ul li {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0.7fr 0fr 0.4fr;
   }
 
   .recipe h2 {
@@ -363,7 +366,7 @@ footer a {
     font-family: Verdana, Geneva, Tahoma, cursive;
     font-size: 2.5em;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
     display: grid;
@@ -372,18 +375,18 @@ footer a {
 
   .recipe h2 + p {
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
   }
 
   .recipe img {
     max-width: 100%;
     height: auto;
-    grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 7;
     grid-row-start: 2;
     grid-row-end: 2;
   }
@@ -392,10 +395,10 @@ footer a {
     grid-row-start: 3;
     grid-row-end: 3;
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 3;
     display: grid;
     justify-content: center;
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0;
   }
 
@@ -403,29 +406,29 @@ footer a {
     grid-row-start: 4;
     grid-row-end: 6;
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 3;
     display: grid;
     justify-content: center;
-    font-size: 2em;
+    font-size: 1.4em;
     margin: 0;
   }
 
   .recipe p + h3 {
     grid-row-start: 3;
     grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
     display: grid;
     justify-content: center;
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0;
   }
   .recipe p + h3 + p {
     grid-row-start: 4;
     grid-row-end: 6;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    font-size: 2em;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    font-size: 1.3em;
     margin: 0;
   }
 
