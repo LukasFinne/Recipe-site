@@ -15,6 +15,10 @@ body a:hover {
   height: 100vh;
 }
 
+.fa-heart {
+  color: black;
+}
+
 nav {
   background-color: #fecd70;
   grid-column-start: 1;
@@ -209,7 +213,6 @@ footer a {
   }
 
   #links a {
-    
     color: black;
   }
   ul li {
@@ -342,6 +345,11 @@ footer a {
 
   #links a {
     color: black;
+  }
+
+  #heart {
+    text-align: center;
+    padding-right: 2.4em;
   }
   ul li {
     display: grid;

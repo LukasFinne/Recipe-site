@@ -101,6 +101,8 @@ img {
   text-decoration: none;
 }
 
+
+
 footer {
   background-color: #fecd70;
   padding: 0em;
@@ -151,23 +153,21 @@ footer a {
 }
 
 @media (min-width: 75em) {
+  ul {
+    display: flex;
+    max-width: 100em;
+    margin: auto;
+  }
+  ul li {
+    padding: 0.5em 0.2em 0.2em 0.2em;
+  }
 
-    ul {
-      display: flex;
-      max-width: 100em;
-      margin: auto;
-    }
-    ul li {
-      padding: 0.5em 0.2em 0.2em 0.2em;
-    }
-  
-    ul li img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .recipe p{
-      font-size: 1.5em;
-    }
-  
+  ul li img {
+    width: 100%;
+    height: auto;
+  }
+
+  .recipe p {
+    font-size: 1.5em;
+  }
 }

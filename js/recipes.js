@@ -69,8 +69,6 @@ function printWaffle(url, ul) {
     });
 }
 
-
-
 function printPancake(url, ul) {
   fetch(url)
     .then((resp) => resp.json())
@@ -181,3 +179,21 @@ function printAll(url, ul) {
       console.log(error);
     });
 }
+
+let heart = document.querySelector(".fa-heart");
+
+var color = false;
+
+function like() {
+  let heart = document.querySelector(".fa-heart");
+
+  if (color === false) {
+    heart.style.color = "red";
+    color = true;
+  } else {
+    heart.style.color = "black";
+    color = false;
+  }
+}
+
+heart.addEventListener("click", like);
